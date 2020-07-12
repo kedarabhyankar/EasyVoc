@@ -18,9 +18,11 @@ if [ "$assignmentType" != "HW" ] && [ "$assignmentType" != "LB" ] && [ "$assignm
 	exit 1
 fi
 
-mkdir -p $assignmentSemester/$assignmentEnumeration/
+mkdir -p $assignmentSemester/$assignmentEnumeration/scripts
+mkdir -p $assignmentSemester/$assignmentEnumeration/asnlib
 
 echo "Type the names of the files the student should submit, including the extension, as space separated elements."
 echo "For example, you would type: fileOne.java fileTwo.java fileThree.java"
 read -a filenames
+
 
