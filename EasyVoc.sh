@@ -12,4 +12,3 @@ assignmentName=$(echo $assignmentName | cut -d'-' -f 3)
 
 assignmentType=$(echo $assignmentEnumeration | head -c 2)
 assignmentNumber=$(echo $assignmentEnumeration | tail -c 3)
-echo "The assignment type is a $assignmentType, with number $assignmentNumber, has a a name of $assignmentName, and is part of $assignmentSemester."
